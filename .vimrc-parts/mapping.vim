@@ -6,10 +6,13 @@ set guicursor=
 set nowrap
 
 "set guifont 
-set guifont=Ubuntu\ Mono\ derivative\ Powerline:10
+" set guifont=Ubuntu\ Mono\ derivative\ Powerline:10
 
 "powerline status 
 set laststatus=2
+set ruler 
+set wildmenu
+set showmatch  
 "color column
 " set colorcolumn=80
 " set background=dark
@@ -18,7 +21,8 @@ autocmd FileType markdown setlocal wrap
 
 "Adjust system undo levels
 set undolevels=100
-
+" set autoindent
+set guifont=Menlo\ 14
 "Use system clipboard
 set clipboard=unnamed
 
@@ -31,7 +35,6 @@ set expandtab
 "Don't let Vim hide characters or make loud dings
 set conceallevel=1
 set noerrorbells
-
 "Number gutter
 set number
 
@@ -39,6 +42,7 @@ highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline
 
 "Use search highlighting
+set incsearch
 set hlsearch
 
 "Space above/beside cursor from screen edges

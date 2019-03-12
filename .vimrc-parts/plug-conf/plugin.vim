@@ -30,14 +30,28 @@ Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 Plug 'ctrlpvim/ctrlp.vim'
 "Plug  'ervandew/supertab'
-Plug  'kien/rainbow_parentheses.vim'
+" Plug  'kien/rainbow_parentheses.vim'
+Plug  'luochen1990/rainbow'
 Plug  'tpope/vim-surround'
 Plug  'tomtom/tcomment_vim'
 Plug  'godlygeek/tabular'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 " Plug 'srcery-colors/srcery-vim', { 'as': 'srcery' }
 " Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'HenryNewcomer/vim-theme-papaya'
 call plug#end()
 
-colorscheme papaya
-let g:papaya_gui_color='blue'
+syntax on
+set t_Co=256
+set cursorline
+colorscheme onehalflight
+let g:airline_theme='onehalfdark'
+" lightline
+" let g:lightline.colorscheme='onehalfdark'
+
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
+endif
+

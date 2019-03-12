@@ -17,5 +17,7 @@ source ~/dotfiles/.vimrc-parts/plug-conf/ale.vim
 source ~/dotfiles/.vimrc-parts/plug-conf/emmet.vim
 source ~/dotfiles/.vimrc-parts/plug-conf/tcomment.vim
 source ~/dotfiles/.vimrc-parts/plug-conf/tabular.vim
-source ~/dotfiles/.vimrc-parts/plug-conf/rainbow-parentheses.vim
+
+source ~/dotfiles/.vimrc-parts/plug-conf/rainbow.vim
+" source ~/dotfiles/.vimrc-parts/plug-conf/rainbow-parentheses.vim
 source ~/dotfiles/.vimrc-parts/plug-conf/devicons-must-lastConf.vim
